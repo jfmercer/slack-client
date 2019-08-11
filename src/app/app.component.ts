@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SlackService } from '../app/slack.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  auth = {};
+  private auth: object = {};
+  private user: object;
+  constructor(private slackService: SlackService) {}
+
+  getSlackUser(): void {
+    this.user = this.slackService.getUserInfo();
+  }
 }

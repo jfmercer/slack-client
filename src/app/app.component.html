@@ -5,7 +5,15 @@
 </div>
 <h3>Enter your Slack API Token:</h3>
 <input [(ngModel)]="auth.token" placeholder="token"/>
-<h3>Enter your User ID:</h3>
+<h3>Enter your Slack User ID:</h3>
 <input [(ngModel)]="auth.id" placeholder="id"/>
 
-<button type="submit" [disabled]="!auth.token || !auth.id">Submit</button>
+<button type="submit"
+        [disabled]="!auth.token || !auth.id"
+        (click)="getSlackUser()">Submit</button>
+
+<div *ngIf="user">
+  <h3>User Info:</h3>
+  <h4>Name: {{ user.name }}</h4>
+  <h4>Title: {{ user.title }}</h4>
+</div>
