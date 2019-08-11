@@ -12,6 +12,6 @@ export class AppComponent {
   constructor(private slackService: SlackService) {}
 
   getSlackUser(): void {
-    this.user = this.slackService.getUserInfo();
+    this.slackService.getUserInfo().subscribe(user => this.user = user);
   }
 }
