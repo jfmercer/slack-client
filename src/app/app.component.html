@@ -14,6 +14,7 @@
 
 <div *ngIf="user">
   <h3>User Info:</h3>
-  <h4>Name: {{ user.name }}</h4>
-  <h4>Title: {{ user.title }}</h4>
+  <h4>Name: {{ user.user.profile.real_name }}</h4>
+  <h4>Title: {{ user.user.profile.title }}</h4>
+  <img [src]="user.user.profile.image_192">
 </div>
