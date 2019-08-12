@@ -1,3 +1,7 @@
+# Note to AEP Charge
+
+I have written this tiny web app in response to the [code challenge](https://gist.github.com/Charge-Aep/6c868cdac615a64b8b1bb024f956cad4) described on Github. Simply use `ng serve` to fire up the app. If given both a correct Slack legacy API token and a correct Slack User ID, it will display the name, title, and picture of said user. There is no input validation and error handling is minimal. As requested, I have written an integration test: please see `src/app/slack.service.spec.ts`, lines 29 onwards. For reasons that I cannot figure out, the perfectly good integration test is failing. As I have family commitments this Sunday afternoon, I cannot pursue the problem any further, but would be happy to discuss the problem in person. Please contact me with any questions via my email, [jfmercer@protonmail.com](mailto:jfmercer@protonmail.com).
+
 # SlackClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
