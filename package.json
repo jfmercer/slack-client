@@ -10,6 +10,7 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "license": "GPL-3.0",
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
